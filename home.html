@@ -3,10 +3,196 @@
   <head>
     <meta charset="utf-8">
     <title>L'aventure des croques-monsieurs</title>
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="styles/tingle.css" media="all">
+    <script src="js/modernizr.custom.js"></script>
  </head>
 
   <body>
-    <a href="index.html" class="" data-info="Play"><span>Démarrer l'expérience !</span></a>
+    <header>
+      <nav class="options">
+        <a href="#" class="btn btn--primary btn-demo js-tingle-modal-1">Les règles du jeu</a>
+        <a href="index.html" class="" data-info="Go back home"><span>Accueil</span></a>
+
+
+      </nav>
+    </header>
+
+    <!-- Ici le contenu de la modale la modale-->
+
+    <div class="tingle-demo tingle-demo-tiny" id="rules">
+    <h1>Les règles du jeu</h1>
+    <p>Bienvenue dans l'aventure des croque-monsieurs! Dans ce jeu, tu incarneras le conducteur d'un bâteau! Des croque-monsieurs et des missionnaires
+    veulent passer de l'autre côté de la rivière... Car un trésor d'une valeur inestimable s'y trouve!
+    Mais un petit problème se pose: Seulement deux personnes au maximum peuvent prendre le bâteau à chaque traversée... Et dès que les croque-monsieurs
+    sont en surnombre par rapport aux missionnaires, ils se mettent à les croquer!
+    Trouve la solution pour que tout le monde passe sain et sauf de l'autre côté de la rive!
+    Bonne chance!</p>
+    <img src="styles/images/barque.png" alt="barque">
+    <img src="styles/images/coffre.png" alt="trésor">
+
+    </div>
+
+
+    <!-- Ici l'appel vers le javascript de la modale. Attention à tout mettre dans les bon dossier avec les bons chemins -->
+    <script src="js/tingle.js"></script>
+
+
+    <!-- Ici l'initialisation de la modale. -->
+    <script type="text/javascript">
+
+    /**
+    * Modal Tiny no footer
+    */
+
+    var fenetreModale = new tingle.modal();
+    var btn = document.querySelector('.js-tingle-modal-1');
+    btn.addEventListener('click', function(){
+    fenetreModale.open();
+    });
+    fenetreModale.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+    </script>
+
+    <div class="elements">
+    <!-- Classification personnages (rive gauche)-->
+    <div class="left-bank">
+      <div class="cannibals">
+        <div class="person" id="cannibal_1">
+          <img src="images/c-01.svg" alt="cannibal1">
+        </div>
+        <div class="person" id="missionary_2">
+          <img src="images/m-02.svg" alt="missionary2">
+        </div>
+        <div class="person" id="cannibal_3">
+          <img src="images/c-03.svg" alt="cannibal3">
+        </div>
+      </div>
+      <div class="missionaries">
+        <div class="person" id="missionary_1">
+          <img src="images/m_01.svg" alt="missionary1">
+        </div>
+        <div class="person" id="cannibal_2">
+          <img src="images/c-02.svg" alt="cannibal2">
+        </div>
+        <div class="person" id="missionary_3">
+          <img src="images/m-03.svg" alt="missionary3">
+        </div>
+      </div>
+    </div>
+
+    <!-- Classification personnages (rive droite)-->
+    <div class="right-bank">
+      <div class="cannibals">
+        <div class="person" id="cannibal_1">
+          <img src="images/vide.svg" alt="cannibal1">
+        </div>
+        <div class="person" id="cannibal_2">
+          <img src="images/vide.svg" alt="cannibal2">
+        </div>
+        <div class="person" id="cannibal_3">
+          <img src="images/vide.svg" alt="cannibal3">
+        </div>
+      </div>
+      <div class="missionaries">
+        <div class="person" id="missionary_1">
+          <img src="images/vide.svg" alt="missionary1">
+        </div>
+        <div class="person" id="missionary_2">
+          <img src="images/vide.svg" alt="missionary2">
+        </div>
+        <div class="person" id="missionary_3">
+          <img src="images/vide.svg" alt="missionary3">
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <section class="propositions">
+    <!--  <!Pour les allers -
+      <h2>Qui prend le bâteau?</h2>
+      <! Pour les retours
+      <h2>Qui repart sur l'autre rive?</h2> -->
+
+
+      <nav class="réponses">
+              <div class="possibilities">
+            <!--    <form>
+            <input type="checkbox" id="myCheck" onmouseover="myFunction()" onclick="alert('click event occured')">
+              </form>
+
+          <script>
+          function myFunction() {
+            document.getElementById("myCheck").click();
+          }
+        </script> -->
+            <a href="" class="reponses" data-info=""><span>Un croque-monsieur?</span></a>
+          </div>
+
+
+          <div class="possibilities">
+            <!--   <form>
+        <input type="checkbox" id="myCheck" onmouseover="myFunction()" onclick="alert('click event occured')">
+       </form>
+
+        <script>
+        function myFunction() {
+        document.getElementById("myCheck").click();
+        }
+      </script> -->
+                <a href="" class="reponses" data-info=""><span>Deux croque-monsieur?</span></a>
+        </div>
+
+
+      <div class="possibilities">
+        <!--<form>
+      <input type="checkbox" id="myCheck" onmouseover="myFunction()" onclick="alert('click event occured')">
+      </form>
+
+      <script>
+      function myFunction() {
+      document.getElementById("myCheck").click();
+      }
+    </script> -->
+          <a href="" class="reponses" data-info=""><span>Un missionnaire?</span></a>
+      </div>
+
+      <div class="possibilities">
+      <!--  <form>
+      <input type="checkbox" id="myCheck" onmouseover="myFunction()" onclick="alert('click event occured')">
+      </form>
+
+      <script>
+      function myFunction() {
+      document.getElementById("myCheck").click();
+      }
+    </script> -->
+        <a href="" class="reponses" data-info=""><span>Deux missionnaire?</span></a>
+      </div>
+
+      <div class="possibilities">
+      <!--  <form>
+      <input type="checkbox" id="myCheck" onmouseover="myFunction()" onclick="alert('click event occured')">
+      </form>
+
+      <script>
+      function myFunction() {
+      document.getElementById("myCheck").click();
+      }
+    </script> -->
+        <a href="" class="reponses" data-info=""><span>Un croque-monsieur et un missionnaire?</span></a>
+      </div>
+    </nav>
+
+    </section>
+    <footer>
+      <nav>
+        <a href="home.html" class="" data-info="Try again"><span>Réessayer</span></a>
+      </nav>
+
+
+
+    </footer>
   </body>

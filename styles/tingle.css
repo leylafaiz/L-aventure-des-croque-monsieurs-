@@ -8,7 +8,22 @@
 
 .tingle-modal * {
   box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+  color: maroon;
 }
+
+
+.tingle-modal h1 {
+  text-align: center;
+  font-size: 3em;
+  padding:2%
+}
+
+.tingle-modal p {
+  text-align: center;
+  font-size: 1em;
+}
+
 
 .tingle-modal {
   position: fixed;
@@ -34,6 +49,10 @@
   user-select: none;
   cursor: pointer;
   transition: transform .2s ease;
+  background-image: url(images/parchemin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 /* confirm and alerts
@@ -86,9 +105,8 @@
   flex-shrink: 0;
   margin-top: auto;
   margin-bottom: auto;
-  width: 60%;
+  width: 40%;
   border-radius: 4px;
-  background: #fff;
   opacity: 1;
   cursor: auto;
   transition: transform .3s cubic-bezier(.175, .885, .32, 1.275);
