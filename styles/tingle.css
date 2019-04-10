@@ -15,13 +15,28 @@
 
 .tingle-modal h1 {
   text-align: center;
-  font-size: 3em;
-  padding:2%
+  font-size: 2em;
+  padding:2%;
+  text-transform: uppercase;
+  font-weight:bold;
 }
 
 .tingle-modal p {
+  text-align: justify;
+  font-size: 0,5em;
+  font-size: 15px;
+  line-height: 1.2em;
+  margin: 5px;
+}
+
+.tingle-modal h3 {
   text-align: center;
   font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.tingle-modal span{
+  font-weight: bold;
 }
 
 
@@ -41,7 +56,7 @@
   align-items: center;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, .9);
   opacity: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -53,6 +68,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  background min-width: 1200px;
+}
+.imagesmodale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagesmodale_fils {
+  width :150px;
+  margin-left: 5%;
+  margin-right:5%;
+  margin-bottom: 3%;
+
 }
 
 /* confirm and alerts
@@ -103,7 +131,7 @@
   position: relative;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  margin-top: auto;
+  margin-top:10%;
   margin-bottom: auto;
   width: 40%;
   border-radius: 4px;
@@ -116,6 +144,7 @@
 
 .tingle-modal-box__content {
   padding: 3rem 3rem;
+  min-width: 500px;
 }
 
 .tingle-modal-box__footer {
