@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+
+
+body{
+  background-image: url(images/fondq1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100vh;
+}
+
+.btn {
+  position: fixed;
+  top: 5%;
+  left:5%;
+  z-index: 53;
+
+}
+
+.accueil_btn {
+  position: fixed;
+  top:5%;
+  left:20%;
+  z-index: 53;
+}
+
+.options a{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+  background-color: orange;
+  padding: 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+.elements {
+  display: flex;
+  justify-content: center;
+  margin-top: 30%;
+  margin-bottom: inherit;
+}
+
+.left-bank {
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-right: 20%;
+  width:225px;
+  justify-content: space-between;
+}
+
+.right-bank {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-right: 20%;
+  width:225px;
+  justify-content: space-between;
+}
+
+#cannibal_1 img {
+  width: 100px;
+}
+
+#cannibal_2 img {
+  width: 100px;
+
+}
+#cannibal_3 img {
+  width: 100px;
+}
+#missionary_1 img {
+  width: 100px;
+
+}
+#missionary_2 img {
+  width: 100px;
+
+}
+#missionary_3 img {
+  width: 100px;
+
+}
+section {
+    margin-top: 2em;
+}
+
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.questions h2 {
+  background-color: orange;
+  font-size : 17px;
+  width: 260px;
+  text-align: center;
+  margin: 1%;
+  padding:1%;
+ color: #ffffff;
+ font-family: 'Heebo', sans-serif;
+}
+
+.réponses{
+text-align: center;
+font-size: 15px;
+line-height: 1.2em;
+display: inline-block;
+}
+
+.réponses a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+
+}
+
+
+.réponses {
+  display:flex;
+  justify-content: center;
+}
+
+.possibilities{
+  background-color: orange;
+  width: 130px;
+  margin: 1%;
+  padding : 1.5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.possibilities a{
+  text-transform: uppercase;
+  font-size: 13px;
+
+}
+
+.possibilities span{
+  font-weight:bold;
+font-size: 20px;
+}
+
+
+
+.reessaie {
+  position: fixed;
+  bottom: 5%;
+  width:200px;
+  right: 2em;
+  bottom: 5em;
+
+
+}
+
+.reessaie a{
+  background-color: orange;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+  margin: 1%;
+  padding : 10%;
+}
+
+#retour.reessaie a {
+  position: fixed;
+  right:5em;
+}
+
+.oups {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Heebo', sans-serif;
+  opacity: 0.95;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-image: url(images/parchemin.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20%;
+  position: absolute;
+  z-index: 50;
+  top:10em;
+}
+
+.oups_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:120%;
+}
+
+.oups_content img {
+  width : 50%;
+}
+
+.oups_content span {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.oups h2{
+  text-align: center;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: maroon;
+  margin-bottom: 5%;
+}
+.oups_content p {
+  text-align: left;
+  color: maroon;
+  padding-left: 15px;
+  font-size: 15px;
+  text-transform: none;
+  line-height: 1.5em.
+
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+  text-align: right;
+position: fixed;
+right:2em;
+bottom:1em; 
+  font-size: 10px;
+}
