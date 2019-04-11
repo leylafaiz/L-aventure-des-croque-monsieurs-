@@ -80,6 +80,22 @@ body{
   width: 100px;
 
 }
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questions h2 {
+  background-color: orange;
+  font-size : 17px;
+  width: 260px;
+  text-align: center;
+  margin: 1%;
+  padding:1%;
+ color: #ffffff;
+ font-family: 'Heebo', sans-serif;
+}
 
 .réponses{
 text-align: center;
