@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo');
 
 body {
-  background-image: url(images/home.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
   display: flex;
+  justify-content: center;
+  background-color: #31c0b0;
 }
-
+img {
+  position: fixed;
+  top :0;
+  left: 0;
+  min-width: 100%;
+  max-width: 100%;
+  z-index: 1;
+  max-height: 100vh;
+}
  a{
   text-decoration: none;
   color: #ffffff;
@@ -15,5 +21,11 @@ body {
   background-color: orange;
   padding: 2%;
   text-align: center;
-  align-items: flex-end;
+  border-radius: 15px;
+}
+
+.bouton {
+  position: absolute;
+  bottom: 5em;
+  z-index: 2;
 }

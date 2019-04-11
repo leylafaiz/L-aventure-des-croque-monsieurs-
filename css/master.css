@@ -5,23 +5,36 @@ body{
   background-image: url(images/fondq1.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  max-height: 100vh;
 }
-header {
-  margin-left: 5%;
-  margin-top: 5%;
+
+.btn {
+  position: fixed;
+  top: 5%;
+  left:5%;
+
 }
+
+.accueil_btn {
+  position: fixed;
+  top:5%;
+  left:20%;
+}
+
 .options a{
   text-decoration: none;
   color: #ffffff;
   font-family: 'Heebo', sans-serif;
   background-color: orange;
   padding: 2%;
+  text-transform: uppercase;
+  font-weight: bold;
 
 }
 .elements {
   display: flex;
   justify-content: center;
-  margin-top: 25%;
+  margin-top: 30%;
 }
 
 .left-bank {
@@ -30,6 +43,8 @@ header {
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 7%;
+  width:225px;
+  justify-content: space-between;
 }
 
 .right-bank {
@@ -38,51 +53,120 @@ header {
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 10%;
+  width:225px;
+  justify-content: space-between;
 }
 
 #cannibal_1 img {
   width: 100px;
-  padding: 2%;
 }
 
 #cannibal_2 img {
   width: 100px;
-  padding: 2%;
+
 }
 #cannibal_3 img {
   width: 100px;
-  padding: 2%;
 }
 #missionary_1 img {
   width: 100px;
-  padding: 2%;
+
 }
 #missionary_2 img {
   width: 100px;
-  padding: 2%;
+
 }
 #missionary_3 img {
   width: 100px;
-  padding: 2%;
+
+}
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-section{
-text-align:center;
-font-size: 10px;
-}
-
-section a {
+.questions h2 {
+  background-color: orange;
+  font-size : 17px;
+  width: 260px;
+  text-align: center;
   margin: 1%;
-  padding : 2%;
+  padding:1%;
+ color: #ffffff;
+ font-family: 'Heebo', sans-serif;
+}
+
+.réponses{
+text-align: center;
+font-size: 15px;
+line-height: 1.2em;
+display: inline-block;
+}
+
+.réponses a {
   text-decoration: none;
   color: #ffffff;
   font-family: 'Heebo', sans-serif;
 
 }
-.reponses {
-  background-color: orange;
+
+
+.réponses {
+  display:flex;
+  justify-content: center;
 }
+
+.possibilities{
+  background-color: orange;
+  width: 130px;
+  margin: 1%;
+  padding : 1.5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.possibilities a{
+  text-transform: uppercase;
+  font-size: 13px;
+
+}
+
+.possibilities span{
+  font-weight:bold;
+font-size: 20px;
+}
+
+
+
+.reessaie {
+  background-color: orange;
+  position: fixed;
+  bottom: 5%;
+  width: 100px;
+  margin: 1%;
+  padding : 1%;
+  right: 2em;
+
+}
+
+.reessaie a{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+}
+
+
 
 footer {
   text-align: center;
+}
+
+footer p {
+  color: #ffffff;
+  font-family: 'Heebo', sans-serif;
+  text-align: right;
+  margin-right: 3%;
+  margin-bottom: 2%;
+  font-size: 10px;
 }

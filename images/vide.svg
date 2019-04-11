@@ -1,1 +1,24 @@
-<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" width="45.97" height="45.97" viewBox="0 0 45.97 45.97"><defs><style>.cls-1,.cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:1.1px;}.cls-2{stroke-dasharray:5.55 5.55;}</style></defs><title>vide</title><polyline class="cls-1" points="45.42 42.42 45.42 45.42 42.42 45.42"/><line class="cls-2" x1="36.87" y1="45.42" x2="6.33" y2="45.42"/><polyline class="cls-1" points="3.55 45.42 0.55 45.42 0.55 42.42"/><line class="cls-2" x1="0.55" y1="36.87" x2="0.55" y2="6.33"/><polyline class="cls-1" points="0.55 3.55 0.55 0.55 3.55 0.55"/><line class="cls-2" x1="9.1" y1="0.55" x2="39.65" y2="0.55"/><polyline class="cls-1" points="42.42 0.55 45.42 0.55 45.42 3.55"/><line class="cls-2" x1="45.42" y1="9.1" x2="45.42" y2="39.65"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<title>vide</title>
+<g>
+	<path class="st0" d="M88.9,0h-5.55v2.44h5.55V0L88.9,0z M77.8,0h-5.55v2.44h5.55V0L77.8,0z M66.7,0h-5.55v2.44h5.55V0L66.7,0z
+		 M55.6,0h-5.55v2.44h5.55V0L55.6,0z M44.5,0h-5.55v2.44h5.55V0L44.5,0z M33.4,0h-5.55v2.44h5.55V0L33.4,0z M22.3,0h-5.55v2.44h5.55
+		V0L22.3,0z M11.2,0H5.65v2.44h5.55V0L11.2,0z M2.44,0H0v2.44l0,0c0,1.45,0,3.01,0,3.01h2.44V0L2.44,0z M2.44,11H0v5.55h2.44V11
+		L2.44,11z M2.44,22.1H0v5.55h2.44V22.1L2.44,22.1z M2.44,33.2H0v5.55h2.44V33.2L2.44,33.2z M2.44,44.3H0v5.55h2.44V44.3L2.44,44.3z
+		 M2.44,55.4H0v5.55h2.44V55.4L2.44,55.4z M2.44,66.5H0v5.55h2.44V66.5L2.44,66.5z M2.44,77.6H0v5.55h2.44V77.6L2.44,77.6z
+		 M2.44,88.7H0v5.55h2.44V88.7L2.44,88.7z M5.35,97.56H0v2.24l0,0v-2.24v2.24l0,0v0.2h2.44l0,0l0,0l0,0l0,0c1.41,0,2.91,0,2.91,0
+		V97.56L5.35,97.56z M16.45,97.56H10.9V100h5.55V97.56L16.45,97.56z M27.55,97.56H22V100h5.55V97.56L27.55,97.56z M38.65,97.56H33.1
+		V100h5.55V97.56L38.65,97.56z M49.75,97.56H44.2V100h5.55V97.56L49.75,97.56z M60.85,97.56H55.3V100h5.55V97.56L60.85,97.56z
+		 M71.95,97.56H66.4V100h5.55V97.56L71.95,97.56z M83.05,97.56H77.5V100h5.55V97.56L83.05,97.56z M94.15,97.56H88.6V100h5.55V97.56
+		L94.15,97.56z M100,94.75h-2.44V100h2.14l0,0h-2.14h2.14l0,0h0.3V94.75L100,94.75z M100,83.65h-2.44v5.55H100V83.65L100,83.65z
+		 M100,72.55h-2.44v5.55H100V72.55L100,72.55z M100,61.45h-2.44V67H100V61.45L100,61.45z M100,50.35h-2.44v5.55H100V50.35L100,50.35
+		z M100,39.25h-2.44v5.55H100V39.25L100,39.25z M100,28.15h-2.44v5.55H100V28.15L100,28.15z M100,17.05h-2.44v5.55H100V17.05
+		L100,17.05z M100,5.95h-2.44v5.55H100V5.95L100,5.95z M100,0h-5.55v2.44H100V0L100,0z"/>
+</g>
+</svg>
