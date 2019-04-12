@@ -151,6 +151,7 @@ font-size: 20px;
   width:200px;
   right: 2em;
   bottom: 5em;
+  z-index: 53;
 
 
 }
@@ -230,6 +231,6 @@ footer p {
   text-align: right;
 position: fixed;
 right:2em;
-bottom:1em; 
+bottom:1em;
   font-size: 10px;
 }
