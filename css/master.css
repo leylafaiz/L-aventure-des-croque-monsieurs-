@@ -198,6 +198,7 @@ font-size: 20px;
   width : 50%;
 }
 
+
 .oups_content span {
   font-weight: bold;
   margin-top: 5px;
@@ -218,7 +219,32 @@ font-size: 20px;
   font-size: 15px;
   text-transform: none;
   line-height: 1.5em.
+}
 
+.oups_content2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:120%;
+}
+
+.oups_content2 img {
+  width : 30%;
+}
+
+
+.oups_content2 span {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.oups_content2 p {
+  text-align: left;
+  color: maroon;
+  padding-left: 30px;
+  font-size: 15px;
+  text-transform: none;
+  line-height: 1.5em.
 }
 
 footer {
