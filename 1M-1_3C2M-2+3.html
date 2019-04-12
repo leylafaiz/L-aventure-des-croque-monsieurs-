@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>L'aventure des croques-monsieurs</title>
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/master.css">
+      <link rel="stylesheet" href="styles/tingle.css" media="all">
+  </head>
+  <body>
+
+    <header>
+      <nav class="options">
+        <a href="#" class="btn btn--primary btn-demo js-tingle-modal-1">Les règles du jeu</a>
+        <a href="home.html" class="" data-info="Go back home"><span>Accueil</span></a>
+
+
+      </nav>
+    </header>
+
+    <!-- Ici le contenu de la modale la modale-->
+
+<div class="tingle-demo tingle-demo-tiny">
+    <h1>Les règles du jeu</h1>
+    <p>Many years ago, three knights waited to cross the river Neva. Each knight had his own page, so there were six people. The boat that they had could only carry two.</p>
+<p>However the knights were ferocious killers and the three pages were terrified. In fact, it was certain that any of the pages would die of heart failure if he were not protected at every instant from the other knights by the presence of his own master.</p>
+<p>Was there any way to cross everyone over the river without losing a page?</p>
+</div>
+
+
+<!-- Ici l'appel vers le javascript de la modale. Attention à tout mettre dans les bon dossier avec les bons chemins -->
+<script src="js/tingle.js"></script>
+
+
+<!-- Ici l'initialisation de la modale. -->
+<script type="text/javascript">
+
+/**
+* Modal Tiny no footer
+*/
+
+var fenetreModale = new tingle.modal();
+var btn = document.querySelector('.js-tingle-modal-1');
+btn.addEventListener('click', function(){
+    fenetreModale.open();
+});
+fenetreModale.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+</script>
+
+  <div class="elements">
+    <!-- Classification personnages (rive gauche)-->
+    <div class="left-bank">
+      <div class="cannibals">
+      <!--  <div class="person" id="cannibal_1">
+          <img src="images/c-01.svg" alt="cannibal1">
+        </div> -->
+      <!--  <div class="person" id="missionary_2">
+          <img src="images/m-02.svg" alt="missionary2">
+        </div> -->
+      <!--  <div class="person" id="cannibal_3">
+          <img src="images/c-03.svg" alt="cannibal3">
+        </div> -->
+      </div>
+      <div class="missionaries">
+        <div class="person" id="missionary_1">
+          <img src="images/m_01.svg" alt="missionary1">
+        </div>
+      <!--  <div class="person" id="cannibal_2">
+          <img src="images/c-02.svg" alt="cannibal2">
+        </div> -->
+      <!--  <div class="person" id="missionary_3">
+          <img src="images/m-03.svg" alt="missionary3">
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Classification personnages (rive droite)-->
+    <div class="right-bank">
+      <div class="cannibals">
+        <div class="person" id="cannibal_1">
+          <img src="images/c-01.svg" alt="cannibal1">
+        </div>
+        <div class="person" id="missionary_2">
+          <img src="images/m-02.svg" alt="missionary2">
+        </div>
+        <div class="person" id="cannibal_3">
+          <img src="images/c-03.svg" alt="cannibal3">
+        </div>
+      </div>
+      <div class="missionaries">
+      <!--  <div class="person" id="missionary_1">
+          <img src="images/m_01.svg" alt="missionary1">
+        </div> -->
+        <div class="person" id="cannibal_2">
+          <img src="images/c-02.svg" alt="cannibal2">
+        </div>
+        <div class="person" id="missionary_3">
+          <img src="images/m-03.svg" alt="missionary3">
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <section class="propositions">
+    <!--  <!Pour les allers -
+      <h2>Qui prend le bâteau?</h2>
+      <!-- Pour les retours
+      <h2>Qui repart sur l'autre rive?</h2> -->
+
+
+      <nav>
+        <a href="" class="reponses" data-info=""><span>Un croque-monsieur?</span></a>
+        <a href="" class="reponses" data-info=""><span>Deux croque-monsieur?</span></a>
+        <a href="" class="reponses" data-info=""><span>Un missionnaire?</span></a>
+        <a href="" class="reponses" data-info=""><span>Deux missionnaire?</span></a>
+        <a href="" class="reponses" data-info=""><span>Un croque-monsieur et un missionnaire?</span></a>
+      </nav>
+
+    </section>
+  <footer>
+      <nav>
+        <a href="" class="" data-info="Go back to last step"><span>Retour</span></a>
+        <a href="" class="" data-info="Next step"><span>Valider</span></a>
+        <a href="" class="" data-info="Try again"><span>Réessayer</span></a>
+      </nav>
+    </footer>
+  </body>
+</html>
