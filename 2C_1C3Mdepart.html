@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>L'aventure des croques-monsieurs</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="styles/tingle.css" media="all">
+    <script src="js/modernizr.custom.js"></script>
+ </head>
+
+  <body>
+    <header>
+      <nav class="options">
+        <a href="#" class="btn btn--primary btn-demo js-tingle-modal-1">Les règles du jeu</a>
+        <a href="index.html" class="accueil_btn" data-info="Go back home"><span>Accueil</span></a>
+
+
+      </nav>
+    </header>
+
+    <!-- Ici le contenu de la modale la modale-->
+
+    <div class="tingle-demo tingle-demo-tiny" id="rules">
+    <h1>Les règles du jeu</h1>
+    <p><span>Bienvenue dans l'aventure des croque-monsieurs!</span></p> <p>Dans ce jeu, tu incarneras le conducteur d'un bateau. Des croque-monsieurs et des missionnaires
+    veulent passer de l'autre côté de la rivière car un trésor d'une valeur inestimable s'y trouve!</p>
+    <p>Mais un petit problème se pose:<span> seulement deux personnes </span> au maximum peuvent prendre le bâteau à chaque traversée... Et dès que les croque-monsieurs
+    sont en surnombre par rapport aux missionnaires, ils se mettent à les croquer!
+    Trouve la solution pour que tout le monde passe sain et sauf de l'autre côté de la rive!
+    </p>
+    <h3>Bonne chance!</h3>
+      <section class="imagesmodale">
+    <img class="imagesmodale_fils" src="styles/images/barque.png" alt="barque">
+    <img class="imagesmodale_fils" src="styles/images/coffre.png" alt="trésor">
+    </section>
+
+
+    </div>
+
+
+    <!-- Ici l'appel vers le javascript de la modale. Attention à tout mettre dans les bon dossier avec les bons chemins -->
+    <script src="js/tingle.js"></script>
+
+
+    <!-- Ici l'initialisation de la modale. -->
+    <script type="text/javascript">
+
+    /**
+    * Modal Tiny no footer
+    */
+
+    var fenetreModale = new tingle.modal();
+    var btn = document.querySelector('.js-tingle-modal-1');
+    btn.addEventListener('click', function(){
+    fenetreModale.open();
+    });
+    fenetreModale.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+    </script>
+
+    <div class="elements">
+    <!-- Classification personnages (rive gauche)-->
+    <div class="left-bank">
+      <div class="cannibals">
+        <div class="person" id="cannibal_1">
+          <img src="images/c-01.svg" alt="cannibal1">
+        </div>
+        <div class="person" id="missionary_2">
+          <img src="images/vide.svg" alt="missionary2">
+        </div>
+        <div class="person" id="cannibal_3">
+          <img src="images/vide.svg" alt="cannibal3">
+        </div>
+      </div>
+      <div class="missionaries">
+        <div class="person" id="missionary_1">
+          <img src="images/vide.svg" alt="missionary1">
+        </div>
+        <div class="person" id="cannibal_2">
+          <img src="images/c-02.svg" alt="cannibal2">
+        </div>
+        <div class="person" id="missionary_3">
+          <img src="images/vide.svg" alt="missionary3">
+        </div>
+      </div>
+    </div>
+
+    <!-- Classification personnages (rive droite)-->
+    <div class="right-bank">
+      <div class="cannibals">
+        <div class="person" id="cannibal_1">
+          <img src="images/vide.svg" alt="cannibal1">
+        </div>
+        <div class="person" id="cannibal_2">
+          <img src="images/m-02.svg" alt="missionary2">
+        </div>
+        <div class="person" id="cannibal_3">
+          <img src="images/c-03.svg" alt="cannibal3">
+        </div>
+      </div>
+      <div class="missionaries">
+        <div class="person" id="missionary_1">
+          <img src="images/m_01.svg" alt="missionary1">
+        </div>
+        <div class="person" id="missionary_2">
+          <img src="images/vide.svg" alt="cannibal2">
+        </div>
+        <div class="person" id="missionary_3">
+          <img src="images/m-03.svg" alt="missionary3">
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <section class="propositions">
+     <!--Pour les allers -->
+    <div class="questions">
+      <h2>Qui traverse la rivière ?</h2>
+    </div>
+      <!-- Pour les retours -->
+
+    <!--  <style> body {background-image: url(css/images/fondq2-01.svg);} </style>
+      <div class="questions">
+      <h2>Qui retourne sur la rive ?</h2>
+    </div> -->
+
+
+      <nav class="réponses">
+              <div class="possibilities" id="poss1">
+
+            <a href="" class="reponses" data-info=""><span>1</span><br>croque-monsieur</a>
+          </div>
+
+
+          <div class="possibilities" id="poss2">
+
+                <a href="" class="reponses" data-info=""><span>2 </span><br>croque-monsieurs</a>
+        </div>
+
+
+    <!--  <div class="possibilities" id="poss3">
+
+          <a href="M1.html" class="reponses" data-info=""><span>1</span><br>missionnaire</a>
+      </div> -->
+
+    <!--  <div class="possibilities" id="poss4">
+
+        <a href="M1M2.html" class="reponses" data-info=""><span>2</span> <br> missionnaires</a>
+      </div> -->
+
+    <!--  <div class="possibilities" id="poss5">
+
+        <a href="" class="reponses" data-info=""><span>1</span><br>croque-monsieur et <span>1</span>missionnaire</a>
+      </div> -->
+    </nav>
+
+<!-- Pour les chemins qui se terminent par une défaite des missionnaires
+
+    <div class="oups">
+      <h2> Oups..!</h2>
+        <div class="oups_content">
+      <img src="images/cochon_pendu.png" alt="Les croques monsieurs se régalent de vous">
+      <p> Vous n'avez pas réussi à trouver la bonne combinaison !
+      <br> Les croque-monsieurs ont protégé leur trésor et se préparent à un délicieux festin !
+      <br> <span>Réessayez.</span> </p>
+    </div>
+  </div> -->
+
+  </section>
+
+    <footer>
+ <nav  class="reessaie">
+        <a href="" id="retour" data-info="go back"> < </a>
+        <a href="home.html"  data-info="Try again"><span>Réessayer</span></a>
+      </nav>
+
+      <p> FAIZ Leyla - SABELLE Rachel - TAILLEFER Juliette </p>
+
+
+    </footer>
+  </body>
