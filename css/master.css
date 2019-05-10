@@ -2,10 +2,15 @@
 
 
 body{
-  background-image: url(images/fondq1.svg);
-  background-repeat: no-repeat;
+  background: url(images/fondq1.svg) top center no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+.retour {
+    background: url(images/fondq2-01.svg) top center no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .btn {
